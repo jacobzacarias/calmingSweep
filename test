@@ -1,1 +1,7 @@
 mkdir <calmingSweep>
+#include <iostream>
+
+int main() {
+    std::cout << "Don't mind to this little message, just testing!\n";
+    return 0;
+}
