@@ -5,31 +5,26 @@ This program solves the Traveling Salesman Problem (TSP) using a genetic algorit
 
 # Features
 
-Random generation of initial tours
-Crossover operation for generating new tours from parent tours
-Mutation operation for introducing random changes to a tour
-Fitness calculation based on the total distance of a tour
-Selection operation for creating the next generation of tours
-Getting Started
+- Random generation of initial tours
+- Crossover operation for generating new tours from parent tours
+- Mutation operation for introducing random changes to a tour
+- Fitness calculation based on the total distance of a tour
+- Selection operation for creating the next generation of tours
 
+# Getting Started
 # Prerequisites
+- C++ compiler with C++11 support
 
-C++ compiler with C++11 support
-Building and Running the Program
-Clone the repository or download the source code files.
-Open a terminal and navigate to the directory containing the source code.
-
-# Compile the program using the following command:
-c
-Copy code
+# Building and Running the Program
+1. Clone the repository or download the source code files.
+2. Open a terminal and navigate to the directory containing the source code.
+3. Compile the program using the following command:
 g++ -std=c++11 main.cpp -o tsp_solver
 
-# Run the program:
-bash
-Copy code
+4. Run the program:
 ./tsp_solver
 
-# Follow the on-screen instructions to provide the necessary input, such as the number of cities and their coordinates.
+5. Follow the on-screen instructions to provide the necessary input, such as the number of cities and their coordinates.
 
 # Usage
 
