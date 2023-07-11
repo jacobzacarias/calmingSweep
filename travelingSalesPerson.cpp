@@ -14,7 +14,7 @@ struct City {
 double distance(City city1, City city2) {
     int dx = city1.x - city2.x;
     int dy = city1.y - city2.y;
-    return sqrt(dx*dx + dy*dy);
+    return sqrt(dx * dx + dy * dy);
 }
 
 // Represents a possible solution to the TSP problem
@@ -27,7 +27,7 @@ struct Tour {
         double total_distance = 0.0;
         for (int i = 0; i < order.size() - 1; i++) {
             int city1 = order[i];
-            int city2 = order[i+1];
+            int city2 = order[i + 1];
             total_distance += distance(cities[city1], cities[city2]);
         }
         total_distance += distance(cities[order.back()], cities[order.front()]);
@@ -90,4 +90,22 @@ vector<Tour> selection(vector<Tour>& population) {
     sort(population.begin(), population.end(), [](Tour& tour1, Tour& tour2) {
         return tour1.fitness > tour2.fitness;
     });
-    for (int i = 0; i < num_el
+    for (int i = 0; i < num_elites; i++) {
+        next_generation.push_back(population[i]);
+    }
+    while (next_generation.size() < population.size()) {
+        int index1 = rand() % population.size();
+        int index2 = rand() % population.size();
+        Tour child = crossover(population[index1], population[index2]);
+        mutate(child);
+        next_generation.push_back(child);
+    }
+    return next_generation;
+}
+
+int main() {
+    // Complete program code here!!!
+    
+    return 0;
+}
+
