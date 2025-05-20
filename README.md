@@ -1,7 +1,7 @@
 # calmingSweep
-# Traveling Salesman Problem (TSP) Solver
+# Traveling Salesman Problem Solution
 
-This program solves the Traveling Salesman Problem (TSP) using a genetic algorithm approach. It aims to find the shortest possible route that visits a given set of cities exactly once and returns to the starting city.
+This program solves the Traveling Salesman Problem using a basic algorithm. It aims to find the shortest possible route that visits a given set of cities exactly once and returns to the starting city.
 
 # Features
 
@@ -28,7 +28,7 @@ g++ -std=c++11 main.cpp -o tsp_solver
 
 # Usage
 
-Upon running the program, you will be prompted to enter the number of cities and their coordinates. The program will then generate an initial population of tours and iteratively evolve them using genetic operations such as crossover and mutation. The process continues until a stopping criterion is met (e.g., a maximum number of generations reached).
+Upon running the program, the user is required to a number of cities and their coordinates. The program creates an initial population of tours and iteratively evolves on them using crossover and mutation operations. The process continues until the program reaches a stopping point, for instance if the maximum number of generations are made.
 
 The program outputs the best tour found and its corresponding distance, providing a solution to the Traveling Salesman Problem for the given input.
 
